@@ -1,91 +1,124 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "developers-dialpad",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/regular.png",
+    "light": "/logo/inverted.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#6C3DFF",
+    "light": "#5923ff",
+    "dark": "#6C3DFF",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#6C3DFF",
+      "to": "#5923ff"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Talk to sales",
+      "url": "https://www.dialpad.com/contact-sales/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Register Now",
+    "url": "https://www.dialpad.com/events/crush-quotas-with-ai-sales/?source=webinar&utm_source=dp&utm_medium=headachebar&utm_campaign=DPAiSalesLaunchwbr_Jul2024"
+  },
+  "primaryTab": {
+    "name": "Introduction"
   },
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "/reference"
+    },
+    {
+      "name": "New Releases",
+      "url": "/changelog"
+    },
+    {
+      "name": "Discussions",
+      "url": "/discuss"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://dialpad.com/blog/"
+    },
+    {
+      "name": "Contact Us",
+      "icon": "envelope",
+      "url": "https://dialpad.com/contact-us/"
     }
   ],
+  "modeToggle": {
+    "default": "dark"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "docs/welcome",
+        "docs/guidelines",
+        "docs/publish-your-app"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Authentication",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "docs/authentication-basics",
+        "docs/api-key-generation",
+        "docs/oauth"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Features",
       "pages": [
-        "api-reference/introduction"
+        "docs/ai-agent-assist",
+        "docs/digital-engagement-api",
+        {
+          "group": "Event Subscriptions",
+          "pages": [
+            "docs/event-subscriptions",
+            "docs/call-events",
+            "docs/sms-events",
+            "docs/contact-events",
+            "docs/agent-status-events",
+            "docs/change-log-events",
+            "docs/change-log-action-types"
+          ]
+        },
+        "docs/event-subscriptions-via-websocket",
+        "docs/app-launch-urls",
+        "docs/dialpad-mini-dialer",
+        "docs/call-routing-via-apis",
+        "docs/sms-api",
+        "docs/stats-api-dialpad-analytics",
+        "docs/access-control-policies"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Technical Specifications",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "docs/rate-limits",
+        "docs/a2p-compliance",
+        "docs/custom-ivr-types",
+        "docs/http-status-code"
+      ]
+    },
+    {
+      "group": "System Status",
+      "pages": [
+        "docs/dialpad-status"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "facebook": "https://www.facebook.com/Dialpadhq/",
+    "twitter": "https://twitter.com/dialpad",
+    "linkedin": "https://www.linkedin.com/company/dialpad"
   }
 }
