@@ -1,0 +1,25 @@
+---
+title: "Event Subscriptions"
+---
+Developers or admins can subscribe to event notifications for various supported live events.
+
+# Supported events
+
+Call, SMS, contact, status events and change logs. See child pages to the left.
+
+Subscriptions are limited to 100 per subscription type for all targets combined under a Dialpad Company. Subscriptions targeting the Company itself are limited to 10 per subscription type.
+
+# Getting started
+
+To consume events, you must first build an HTTP service on the public internet. Once you have built your service, you will create an event subscription using Dialpad's API. Creating the subscription will require a URL to your HTTP service.
+
+For details on the APIs used to create event subscriptions, see [the event subscription section of our API reference](/reference/subscriptions)
+.
+
+# Secret and event encoding
+
+For security reasons, events are sent in the JWT format ([https://jwt.io/](https://jwt.io/)
+) and signed with a secret that you share with Dialpad. This allows you to verify that the event came from Dialpad's system. After verifying and decoding the JWT, you'll have access to the JSON event data in the JWT's payload.
+
+Note: The secret is different than your public API key. You will need to generate a secure string to use as the secret when you create the event subscription. Dialpad recommends that you use a unique string for each subscription to help mitigate the impact if that string was somehow leaked.
+
